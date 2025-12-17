@@ -13,7 +13,6 @@ objdir "bin-int/%{cfg.buildcfg}"
 
 files {"DAG.h", "main.cpp"}
 
--- Додаємо підтримку потоків (необхідно для Linux/macOS)
 filter "system:linux or system:macosx"
 links {"pthread"}
 
